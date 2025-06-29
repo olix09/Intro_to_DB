@@ -1,4 +1,4 @@
--- Full description of books table using INFORMATION_SCHEMA
+-- Full description of Books table using INFORMATION_SCHEMA
 SELECT 
     COLUMN_NAME AS 'Field',
     COLUMN_TYPE AS 'Type',
@@ -9,7 +9,7 @@ SELECT
 FROM 
     INFORMATION_SCHEMA.COLUMNS
 WHERE 
-    TABLE_SCHEMA = DATABASE() 
-    AND TABLE_NAME = 'books'
+    TABLE_SCHEMA = 'alx_book_store'
+    AND TABLE_NAME = 'Books'
 ORDER BY 
     ORDINAL_POSITION;
